@@ -173,3 +173,13 @@
 </body>
 
 </html>
+
+{% block stylesheet %}
+{{ super() }}
+<style>
+  body {
+    color: #f5f5f5;
+    background-color: #2b2b2b;
+  }
+</style>
+{% endblock %}
