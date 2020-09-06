@@ -7,5 +7,5 @@ has these files in `/usr/local/share/jupyterhub/templates`.
 This folder does not affect the content or styling of our 
 JupyterHub; they are only used as a reference.
 
-Visit [this section](https://github.com/LibreTexts/metalc/blob/master/docs/Bare-Metal/baremetal.md#editing-custom-html-pages)
-of the metalc documentation to learn how to edit html pages.
+Visit [this section]()
+of the mageo documentation to learn how to edit html pages.
