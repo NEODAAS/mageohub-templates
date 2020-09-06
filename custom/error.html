@@ -1,0 +1,26 @@
+{% extends "templates/error.html" %}
+
+{% block h1_error %}
+{% if status_code == 403 %}
+{{ super() }}
+<p>
+  <strong>It looks like you need to request an account!</strong> If you are a PML employee or a NEODAAS affiliate, you can request an account
+  by
+  <a href="mailto:helpdesk@neodaas.ac.uk">sending us</a> an email from a Gitlab connected email address. NEODAAS affiliated accounts should be requested by their line managers.
+</p>
+{% elif status_code == 400 %}
+{{ super() }}
+<p>
+  Please login again from <a href="https://mageo.pml.ac.uk">the home page</a>.
+</p>
+{% elif status_code == 500 %}
+{{ super() }}
+<p>
+  Oh no! Something is wrong on our end. If this problem persists, please 
+  <a href="mailto:helpdesk@neodaas.ac.uk">email us</a>.
+</p>
+{% else %}
+{{ super() }}
+{% endif %}
+
+{% endblock h1_error %}
