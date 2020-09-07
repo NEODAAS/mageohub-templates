@@ -34,6 +34,13 @@
     {% block stylesheet %}
     <link rel="stylesheet" href="{{ static_url('css/style.min.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ static_url('external/css/custom.css') }}" type="text/css"/>
+    {{ super() }}
+    <style>
+    body {
+      color: #f5f5f5;
+      background-color: #2b2b2b;
+    }
+    </style>
     {% endblock %}
     <script src="{{static_url("components/requirejs/require.js") }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{static_url("components/jquery/dist/jquery.min.js") }}" type="text/javascript" charset="utf-8"></script>
@@ -173,13 +180,3 @@
 </body>
 
 </html>
-
-{% block stylesheet %}
-{{ super() }}
-<style>
-  body {
-    color: #f5f5f5;
-    background-color: #2b2b2b;
-  }
-</style>
-{% endblock %}
