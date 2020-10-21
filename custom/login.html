@@ -23,17 +23,16 @@
   {% block login %}
   <div class="col-sm-4 left-col">
     <div id="login-box">
-      <h3 align="center">Login to MageoHub</h3>
+      <h3 align="center">Login to MAGEOHub</h3>
       {{ super() }}
     </div>
     <p>
       <small>
-        Funded by the
+        Funded by the U.K. Research and Inovation
         <a href="https://nerc.ukri.org"
             target="_blank"> Natural Environment Research Council
-        </a> from the U.K Research Institute. Equipment, hosting and support provided by
-        <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a>, and
-        built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
+        </a> and hosted at <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a> as part of the NERC Earth Observation Data Aqusition and Analysis Service (<a href="https://neodaas.ac.uk" target="_blank">NEODAAS</a>).
+        Built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
       </small>
     </p>
 
@@ -43,11 +42,11 @@
 
   <div class="container col-sm-7">
     <h1>Welcome to the NEODAAS MAGEOHub!</h1>
-    <p>This JupyterHub instance for MAGEO (dubbed MAGEOHub) serves NEODAAS contributors and their students, as well as PML, staff, and students.</p>
+    <p>This JupyterHub instance for MAGEO (MAGEOHub) provides the an easy way to access the capability of the MAssive GPU Cluster for EO (<a href="https://www.neodaas.ac.uk/News/New_capability_for_developing_environmental_intell" target="_blank">MAGEO</a>) for NEODAAS users. </p>
 
     <h2>Need an account?</h2>
     <p>
-      If you are a PML Employee or NEODAAS affiliate, you can request an account by <a href="mailto:helpdesk@neodaas.ac.uk">sending us</a> an email from a Gitlab connected email address. PML employee accounts should be requested by their line managers.
+      Please email helpdesk<span style="display:none">NOSPAM</span>@neodaas.ac.uk for access explaining which institute you are based at and what you intend to use MAGEO for and a member of NEODAAS will be in touch.
     </p>
 
     <h2 id="gettingstartedwithjupyter">Getting started with Jupyter</h2>
@@ -75,7 +74,7 @@
     </ul>
 
     <h2>Any questions?</h2>
-    <p>Please checkout our <a href="{{ static_url('external/pages/faq.html') }}">faq</a> page. If you can't find your question, feel free to email us at <a href="mailto:helpdesk@neodaas.ac.uk">helpdesk@neodaas.ac.uk</a>. For technical issues, open an issue on <a href="https://github.com/NEODAAS/MAGEO/issues" target="_blank">Github</a> and we will try to resolve it.</p>
+    <p>If you have any questoins, contact us using helpdesk<span style="display:none">NOSPAM</span>@neodaas.ac.uk</p>
   </div>
 </div>
 {% endblock main %}

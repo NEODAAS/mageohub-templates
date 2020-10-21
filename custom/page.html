@@ -112,17 +112,22 @@
 
       <div class="collapse navbar-collapse" id="thenavbar">
         <ul class="nav navbar-nav">
+          <li><a href="https://www.neodaas.ac.uk/Home" target="_blank">About NEODAAS</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Services" target="_blank">Services</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Products" target="_blank">Products</a></li>
+          <li><a href="https://www.neodaas.ac.uk/News" target="_blank">News</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Our_impact" target="_blank">Our Impact</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Publications" target="_blank">Publications</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Access Data" target="_blank">Access Data</a></li>
+          <li><a href="https://www.neodaas.ac.uk/Contact" target="_blank">Contact</a></li>
           {% if user %}
           {% block nav_bar_left_items %}
-            <li><a href="{{base_url}}home">Home</a></li>
             <li><a href="{{base_url}}token">Token</a></li>
             {% if user.admin %}
             <li><a href="{{base_url}}admin">Admin</a></li>
             {% endif %}
           {% endblock %}
           {% endif %}
-          <li><a href="{{ static_url('external/pages/about.html') }}">About</a></li>
-          <li><a href="{{ static_url('external/pages/faq.html') }}">FAQ</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {% block nav_bar_right_items %}
