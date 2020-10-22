@@ -4,20 +4,18 @@
 {% if status_code == 403 %}
 {{ super() }}
 <p>
-  <strong>It looks like you need to request an account!</strong> If you are a PML employee or a NEODAAS affiliate, you can request an account
-  by
-  <a href="mailto:helpdesk@neodaas.ac.uk">sending us</a> an email from a Gitlab connected email address. NEODAAS affiliated accounts should be requested by their line managers.
+  <strong>GitHub account not authorised to access MAGEOHub</strong><br>
+For access, please email helpdesk<span style="display:none">NOSPAM</span>@neodaas.ac.uk explaining which institute you are based at, what you intend to use MAGEO for and your GitHub user name. A member of NEODAAS will be in touch as soon as possible.
 </p>
 {% elif status_code == 400 %}
 {{ super() }}
 <p>
-  Please login again from <a href="https://data.neodaas.ac.uk/hub">the home page</a>.
+  Please login again from <a href="/hub">the home page</a>.
 </p>
 {% elif status_code == 500 %}
 {{ super() }}
 <p>
-  Oh no! Something is wrong on our end. If this problem persists, please 
-  <a href="mailto:helpdesk@neodaas.ac.uk">email us</a>.
+  Oh no! Something is wrong on our end. If this problem persists, please email helpdesk<span style="display:none">NOSPAM</span>@neodaas.ac.uk
 </p>
 {% else %}
 {{ super() }}
