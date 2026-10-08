@@ -1,6 +1,28 @@
 {% extends "templates/login.html" %}
 
 {% block main %}
+
+  {% block login %}
+  <div class="col-sm-4 left-col">
+    <div id="login-box">
+      <h3 align="center">Login to MAGEOHub</h3>
+      {{ super() }}
+    </div>
+    <p>
+      <small>
+        Funded by the U.K. Research and Innovation
+        <a href="https://nerc.ukri.org"
+            target="_blank"> Natural Environment Research Council
+        </a> and hosted at <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a> as part of the NERC Earth Observation Data Aqusition and Analysis Service (<a href="https://neodaas.ac.uk" target="_blank">NEODAAS</a>).
+        Built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
+      </small>
+    </p>
+
+    <div class="sponsors row align-items-center justify-content-around flex-wrap"></div>
+  </div>
+  {% endblock login %}
+
+
 <div class="main-content container">
   <div class="branding">
     <div class="logos">
@@ -58,25 +80,7 @@
 
 </div>
 
-  {% block login %}
-  <div class="col-sm-4 left-col">
-    <div id="login-box">
-      <h3 align="center">Login to MAGEOHub</h3>
-      {{ super() }}
-    </div>
-    <p>
-      <small>
-        Funded by the U.K. Research and Innovation
-        <a href="https://nerc.ukri.org"
-            target="_blank"> Natural Environment Research Council
-        </a> and hosted at <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a> as part of the NERC Earth Observation Data Aqusition and Analysis Service (<a href="https://neodaas.ac.uk" target="_blank">NEODAAS</a>).
-        Built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
-      </small>
-    </p>
 
-    <div class="sponsors row align-items-center justify-content-around flex-wrap"></div>
-  </div>
-  {% endblock login %}
     
     <h2>Acknowledging NEODAAS</h2>
       <p>A condition of use of MAGEOHub is that <a href="https://www.neodaas.ac.uk/" target="_blank">NEODAAS</a> is acknowledged in all publications and presentations that either directly use NEODAAS compute resources, imagery or report on work that benefited from data supplied by NEODAAS. It would be greatly appreciated if you would notify info@neodaas.ac.uk of any such use of our data. Number of publications using our data is a major benchmark by which NEODAAS’ success is measured, and as such this directly impacts on
