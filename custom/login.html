@@ -2,27 +2,6 @@
 
 {% block main %}
 
-  {% block login %}
-  <div class="col-sm-4 left-col">
-    <div id="login-box">
-      <h3 align="center">Login to MAGEOHub</h3>
-      {{ super() }}
-    </div>
-    <p>
-      <small>
-        Funded by the U.K. Research and Innovation
-        <a href="https://nerc.ukri.org"
-            target="_blank"> Natural Environment Research Council
-        </a> and hosted at <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a> as part of the NERC Earth Observation Data Aqusition and Analysis Service (<a href="https://neodaas.ac.uk" target="_blank">NEODAAS</a>).
-        Built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
-      </small>
-    </p>
-
-    <div class="sponsors row align-items-center justify-content-around flex-wrap"></div>
-  </div>
-  {% endblock login %}
-
-
 <div class="main-content container">
   <div class="branding">
     <div class="logos">
@@ -79,6 +58,31 @@
   </p>
 
 </div>
+
+<p> <p>
+
+  {% block login %}
+  <div class="col-sm-4 left-col">
+    <div id="login-box">
+      <h3 align="center">Login to MAGEOHub</h3>
+      {{ super() }}
+    </div>
+    <p>
+      <small>
+        Funded by the U.K. Research and Innovation
+        <a href="https://nerc.ukri.org"
+            target="_blank"> Natural Environment Research Council
+        </a> and hosted at <a href="https://pml.ac.uk" target="_blank">Plymouth Marine Laboratory</a> as part of the NERC Earth Observation Data Aqusition and Analysis Service (<a href="https://neodaas.ac.uk" target="_blank">NEODAAS</a>).
+        Built by <a href="https://ocf.co.uk" target="_blank">OCF Ltd</a>.
+      </small>
+    </p>
+
+    <div class="sponsors row align-items-center justify-content-around flex-wrap"></div>
+  </div>
+  {% endblock login %}
+
+
+
 
 
     
